@@ -9,7 +9,7 @@
 # You can find the bash script in the repository, but will have to install manually.
 #
 # Commands:
-# hubot search - searches for all terms separated by whitespace as separate arguments
+# hubot super search - searches for all terms separated by whitespace as separate arguments
 #
 # Authors:
 # Eric Z Goodnight, with LOTS of help from Evan Soloman & Sapan Ganguly
