@@ -17,15 +17,14 @@
 
 {exec} = require 'child_process'
 module.exports = (robot) ->
-  robot.respond /search (.*)$/i, (msg) ->
+  robot.respond /super[\s]?search (.*)$/i, (msg) ->
     Argument = msg.match[1]
-    command = "/home/bin/search.sh '#{Argument}' "
+    command = "./search.sh '#{Argument}' "
     msg.send "Searching for #{Argument}."
 
     exec command, (error, stdout, stderr) ->
 
       if stdout
-        msg.send "I think I found something!"
         msg.send stdout
 
       else
